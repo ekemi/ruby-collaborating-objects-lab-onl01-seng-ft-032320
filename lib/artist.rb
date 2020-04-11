@@ -42,7 +42,6 @@ class Artist
      find_name ? find_name : self.new(name)
 
    end
-   end
   #
   #
   #     end
