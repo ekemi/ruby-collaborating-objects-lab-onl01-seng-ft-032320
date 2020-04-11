@@ -23,8 +23,7 @@ class Artist
   end
 
   def add_song(song)
-      @songs << song
-    return  @songs
+      song.artist= self
       #binding.pry
   end
   def songs
