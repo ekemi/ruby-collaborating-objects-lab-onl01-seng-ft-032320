@@ -26,15 +26,6 @@ class Artist
       @songs << song
       #binding.pry
   end
-  def self.create(name)
-      artist = self.new(name)
-      artist.name= name
-      artist
-  end
-      def save
-        @@all << self
-
-      end
 
    def self.find_or_create_by_name(name)
      find_name =self.all.detect{|artist| artist.name == name}
@@ -42,7 +33,9 @@ class Artist
      find_name ? find_name : self.new(name)
 
    end
-  #
+
+   def print_songs(song)
+  add_song(song).each{|song| song.name}
   #
   #     end
   #   @@all = []
