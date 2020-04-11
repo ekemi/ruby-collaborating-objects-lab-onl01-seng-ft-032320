@@ -8,5 +8,10 @@ class Song
 
   def self.all
      @@all
+     #binding.pry
+  end
+
+  def self.new_by_filename(filenames)
+
   end
 end
