@@ -5,6 +5,7 @@ class MP3Importer
    end
 
    def files
+     Dir.entries(path).map{|files| files.split("-").last}
    end
 
 
