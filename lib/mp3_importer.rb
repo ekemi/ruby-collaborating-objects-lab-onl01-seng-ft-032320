@@ -4,10 +4,10 @@ class MP3Importer
    def initialize(path)
        @path = path
    end
-
+  bilding.pry
    def files
-     Dir.entries(path).map{|files| files.split("-").last if files.length ==4}
-     binding.pry
+     Dir.entries(path).map{|files| files.split("-").last}
+
    end
 
 
