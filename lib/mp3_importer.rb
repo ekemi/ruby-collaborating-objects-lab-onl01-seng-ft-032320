@@ -7,7 +7,7 @@ class MP3Importer
 
    def files
        binding.pry
-     Dir.entries(path).map{|files| 
+     Dir.entries(path).map{|files|
            if files.length == 4
              files.last
              files
