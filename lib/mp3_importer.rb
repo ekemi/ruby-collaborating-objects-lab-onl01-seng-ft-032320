@@ -6,7 +6,7 @@ class MP3Importer
    end
 
    def files
-       binding.pry
+       #binding.pry
      Dir.entries(path).select{|files| files.length > 4}#.last}
 
 
