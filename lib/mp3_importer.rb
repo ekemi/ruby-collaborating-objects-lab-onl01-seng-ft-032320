@@ -4,8 +4,9 @@ class MP3Importer
    def initialize(path)
        @path = path
    end
-  binding.pry
+  
    def files
+       binding.pry
      Dir.entries(path).map{|files| files.split("-").last}
 
    end
