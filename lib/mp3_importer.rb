@@ -5,7 +5,8 @@ class MP3Importer
    end
 
    def files
-     Dir.entries(path).map{|files| files.split("-").last if files.length ==4 files}
+     Dir.entries(path).map{|files| files.split("-").last if files.length ==4}
+     files
    end
 
 
