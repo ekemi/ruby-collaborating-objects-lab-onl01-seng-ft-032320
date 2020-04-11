@@ -23,13 +23,13 @@ class Artist
   end
 
   def add_song(song)
-       @song << song
+       @songs << song
        song.artist= self
        song
       #binding.pry
   end
   def songs
-    @song
+    @songs
   #  Song.all.select {|song| song.artist == self}
     #binding.pry
   end
