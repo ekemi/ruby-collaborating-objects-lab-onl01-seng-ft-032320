@@ -6,12 +6,9 @@ class MP3Importer
    end
 
    def files
-       binding.pry
-     Dir.entries(path).map{|files|
-           if files.length == 4
-             files.last
-             files
-     }
+      # binding.pry
+     Dir.entries(path).map{|files| files.split("-").last}
+
 
    end
 
