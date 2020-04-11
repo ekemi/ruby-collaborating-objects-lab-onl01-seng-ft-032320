@@ -36,6 +36,7 @@ class Artist
 
    def print_songs(song)
   add_song(song).each{|song| song.name}
+end
   #
   #     end
   #   @@all = []
