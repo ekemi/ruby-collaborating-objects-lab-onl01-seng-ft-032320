@@ -26,6 +26,15 @@ class Artist
       @songs << song
       #binding.pry
   end
+  def self.create(name)
+      artist = self.new(name)
+      artist.name= name
+      artist
+
+  def self.find_or_create_by_name
+
+           
+      end
   #   @@all = []
   #  def initialize(name)
   #
