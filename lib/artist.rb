@@ -24,7 +24,7 @@ class Artist
 
   def add_song(song)
       @songs << song
-      @songs
+    return  @songs
       #binding.pry
   end
   def songs
